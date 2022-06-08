@@ -1,7 +1,7 @@
 .customers-join{
     margin-bottom: 150px;
     padding: 35px 0 45px;
-    background: var(--frame-64);
+    background: linear-gradient(180deg, #F5F5F5 0%, rgba(245, 245, 245, 0) 100%);
   }
   
   .customers-join__box{
@@ -21,7 +21,6 @@
     font-size: 32px;
     line-height: 48px;
     text-align: center;
-    color: var(--frame-56);
   } 
   
   .customers-join__list{
@@ -76,7 +75,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 28px;
-    color: var(--frame-65);
+    color: #000000;
   }
   
   
