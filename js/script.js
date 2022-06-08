@@ -6,10 +6,10 @@ btn.addEventListener("click", () => {
   menu.classList.toggle("active");
 });
 
-const accordion = document.querySelector(".faqs__accordionBx");
+const accordion = document.querySelectorAll(".faqs__accordionBx");
 
-for (i = 0; i < accordion; i++) {
+for (i = 0; i < accordion.length; i++) {
   accordion[i].addEventListener("click", function () {
-    
-  });
+    this.classList.toggle('acactive')
+  });   
 }
