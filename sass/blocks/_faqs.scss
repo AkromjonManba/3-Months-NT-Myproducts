@@ -1,0 +1,71 @@
+.faqs {
+  margin-bottom: 150px;
+}
+
+.faqs__title {
+  margin: 0;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 51px;
+  color: #22343d;
+  text-align: center;
+}
+
+.faqs__text {
+  margin: 0;
+  margin-bottom: 85px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #22343d;
+  text-align: center;
+}
+
+.faqs__accordion {
+  max-width: 920px;
+}
+
+.faqs__accordion .faqs__accordionBx {
+  position: relative;
+  margin: 10px 20px;
+}
+
+.faqs__accordion .faqs__accordionBx .faqs__accordion__title {
+  position: relative;
+  padding: 10px 0 10px 30px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  border-bottom: 1px solid #e7e7e7;
+  color: #22343d;
+}
+
+.faqs__accordion .faqs__accordionBx .faqs__accordion__title::before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  @include flex-starter;
+  justify-content: center;
+  transform: translateY(-50%);
+  background: #02897a;
+  color: #fff;
+  font-size: 22px;
+  border-radius: 50%;
+}
+
+.faqs__accordion .faqs__accordionBx .faqs__accordion__text {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  transition: all 0.5s linear;
+}
+
+.faqs__accordion .faqs__accordionBx.acactive .faqs__accordion__text {
+  height: 150px;
+  padding: 10px;
+}
